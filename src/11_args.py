@@ -5,12 +5,19 @@
 # the sum. This is what you'd consider to be a regular, normal function.
 
 # YOUR CODE HERE
+def f1(x, y):
+    return x+y
 
 print(f1(1, 2))
 
 # Write a function f2 that takes any number of integer arguments and returns the
 # sum.
 # Note: Google for "python arbitrary arguments" and look for "*args"
+def f2(*my_input):
+    sum = 0
+    for item in my_input:
+        sum += item
+    return sum
 
 # YOUR CODE HERE
 
